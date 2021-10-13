@@ -5,6 +5,7 @@ export type Subscription = {
   picture: string;
   id: string;
   ping: string;
+  webhookURL?: string;
 };
 
 export type Config = {

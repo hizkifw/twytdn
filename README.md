@@ -20,7 +20,8 @@ docker run --rm -v /path/to/config.json:/app/config.json:ro hizkifw/twytdn:lates
       "name": "戌亥とこ - Inui Toko -",
       "picture": "https://content.archive.ragtag.moe/UCXRlIK3Cw_TJIQC5kSJJQMg/profile.jpg",
       "id": "UCXRlIK3Cw_TJIQC5kSJJQMg",
-      "ping": "<@&1234567890>"
+      "ping": "<@&1234567890>",
+      "webhookURL": "(optional override, e.g. https://discord.com/api/webhooks/xxxx/xxxxx)",
     },
     {
       "name": "アンジュ・カトリーナ - Ange Katrina -",

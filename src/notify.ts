@@ -4,10 +4,11 @@ export type Notification = {
   avatarURL: string;
   username: string;
   content: string;
+  webhookURL?: string;
 };
 
 export const notify = (data: Notification) => {
-  return fetch(config.webhookURL, {
+  return fetch(data.webhookURL || config.webhookURL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

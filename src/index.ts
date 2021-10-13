@@ -28,6 +28,7 @@ const update = async (
         username: subscription.name,
         avatarURL: subscription.picture,
         content: subscription.ping + '\n' + urls,
+        webhookURL: subscription.webhookURL,
       });
     } catch (ex) {
       console.error(ex);
