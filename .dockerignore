@@ -1,0 +1,12 @@
+.env
+.vscode/
+coverage/
+cov/
+lcov/
+*.sqlite
+config.json
+.vim
+.git
+.dockerignore
+Dockerfile
+README.md
