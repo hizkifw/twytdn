@@ -1,0 +1,22 @@
+name: build executables
+on: [ push ]
+jobs:
+  deno-build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Deno
+      uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.x
+
+    - name: Compile executables
+      run: make all
+
+    - name: Collect artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: build

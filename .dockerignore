@@ -10,3 +10,4 @@ config.json
 .dockerignore
 Dockerfile
 README.md
+build/
